@@ -1,0 +1,132 @@
+@media screen and (max-width: 55em) {
+	.back_button {
+		width: 40px;
+		height: 50px;
+		position: relative;
+		top: 0px;
+		color: #FFFFFF;
+		left: auto;
+	}
+	.left_underline {
+		position: absolute;
+		font-size: 30px;
+		left: 13px;
+		-webkit-transform: rotate(90);
+		-ms-transform: rotate(0);
+		transform: rotateX(70deg);
+		top: -5px;
+	}
+	
+	.right_underline {
+		position: absolute;
+		font-size: 30px;
+		left: 13px;
+		-webkit-transform: rotate(90);
+		-ms-transform: rotate(0);
+		transform: rotateX(70deg);
+		top: 3px;
+	}
+	
+	.header-app {
+		position: fixed;
+		height: 50px;
+		width: 101%;
+		left: 0;
+		background: #FFFFFF;
+		top: 0;
+		z-index: 2;
+	}
+	.search_text {
+		position: absolute;
+		height: 32px;
+		width: 290px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.serch_input{
+		height: 32px;
+		border: none;
+		text-align: left;
+		outline-style: none;
+		padding: 0px;
+		padding-left: 0;
+		font-size: 16px;
+		position: absolute;
+		top: 50%;
+		margin: 0 auto;
+		margin-top: -16px;
+		width: 248px;
+		left: 35px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		color: #bacac6;
+		line-height: 16px;
+	}
+	.search_icon {
+		display: block;
+		height: 100%;
+		width: 36px;
+		left: 0;
+		top: 0;
+		background: url(../image/search_icon.png) no-repeat center;
+		background-size: 22px 22px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		background-color: #FFFFFF;
+	}
+	.qrcode_icon{
+		height: 100%;
+		background-color: #bacac6;
+		background: url(../image/saoyisao.png) no-repeat center;
+		background-size:30px 30px;
+	}
+	.go_back{
+		height: 100%;
+		background-color: #bacac6;
+		background: url(../../img/go_back.png) no-repeat center;
+		background-size:30px 30px;
+	}
+	.message {
+	    height: 50px;
+	    position: absolute;
+	    top: 0;
+	    width: 40px;
+	    right: 0;
+	}
+	.message_icon{
+		display: block;
+		background-color: #BACAC6;
+		background: url(../image/info.png) no-repeat center;
+		background-size: 30px 30px;
+		height: 50px;
+		width: 30px;
+		
+	}
+	.title_text {
+	    position: absolute;
+	    height: 32px;
+	    width: 80%;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    text-align: center;
+	    font-size: 22px;
+	    line-height: 30px;
+	}
+	span.my_shopcar_edit {
+	    /* background-color: #BACAC6; */
+	    /* background: url(../image/info.png) no-repeat center; */
+	    background-size: 30px 30px;
+	    height: 50px;
+	    width: 50px;
+	    line-height: 50px;
+	}
+	
+}
+input::-webkit-input-placeholder{
+	color:#d6ecf0 ;
+}
+.back_presss {
+	background-color: #DDDDDD;
+}

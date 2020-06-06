@@ -1,0 +1,103 @@
+<div class="header-app">
+	<div class="back_button none">
+		<!-- 			<span class="left_underline">/</span>
+			<span class="right_underline">\</span> -->
+		<div class="go_back none"></div>
+		<div class="qrcode_icon none" id="qrcode_icon"></div>
+	</div>
+	<div class="search_text none">
+		<span class="search_icon"></span>
+		<input type="text" name="" id="" class="serch_input" placeholder="请输入搜索内容">
+	</div>
+	<div class="title_text none">
+		<p></p>
+	</div>
+	<div class="message">
+		<span class="message_icon none"></span>
+		<span class="my_shopcar_edit none">编辑</span>
+
+	</div>
+</div>
+<script type="text/javascript">
+	var qrcode_icon = $(".qrcode_icon");
+	qrcode_icon.click(function(){
+		window.Android.Saomiao();	
+	})
+	var urlname = window.location.pathname;
+	urlname = urlname.substring(urlname.lastIndexOf('/') + 1, urlname.length);
+	console.log(urlname)
+	if(urlname == "index.html"){
+		// 
+		$(".search_text").removeClass("none")
+		$(".back_button").removeClass("none")
+		$(".qrcode_icon").removeClass("none")
+		$(".message_icon").removeClass("none")
+		
+		$(".title_text").addClass("none")
+		$(".go_back").addClass("none")
+		$(".my_shopcar_edit").addClass("none")
+	}else if(urlname == "my_info.html"){
+		console.log("2222")
+		$(".title_text").removeClass("none")
+		$(".back_button").addClass("none")
+		$(".search_text").addClass("none")
+		$(".qrcode_icon").addClass("none")
+		$(".go_back").addClass("none")
+		$(".message_icon").removeClass("none")
+		$(".my_shopcar_edit").addClass("none")
+	}else if(urlname == "my_shopcar.html"){
+		$(".title_text").removeClass("none")
+		$(".back_button").removeClass("none")
+		$(".search_text").addClass("none")
+		$(".qrcode_icon").addClass("none")
+		$(".go_back").addClass("none")
+		$(".message_icon").addClass("none")
+		$(".my_shopcar_edit").removeClass("none")
+	}else{
+		$(".title_text").removeClass("none")
+		$(".back_button").removeClass("none")
+		$(".search_text").addClass("none")
+		$(".qrcode_icon").addClass("none")
+		$(".go_back").removeClass("none")
+		$(".message_icon").addClass("none")
+		$(".my_shopcar_edit").addClass("none")
+	}
+	if(urlname=="my_info.html"){
+		$(".title_text").text("我的")
+	}else if(urlname == "my_shopcar.html"){
+		$(".title_text").text("购物车")
+	}else if(urlname == "my_dis_list.html"){
+		$(".title_text").text("发现")
+	}else if(urlname == "my_shop.html"){
+		$(".title_text").text("商城")
+	}else{
+		$(".title_text").text($("title").text())
+	}
+	var qrcode_icon=$("#qrcode_icon");
+	qrcode_icon.click(function(){
+		// console.log("2222222")
+	});
+	/*编辑*/
+	$(".my_shopcar_edit").click(function(){
+		console.log("1111")
+	       if ($(this).html()=="编辑") {
+	       	$(this).html("完成");
+	       	$(".bottom").eq(1).show();
+	       }else{
+	       	$(this).html("编辑");
+	       	$(".bottom").eq(1).hide();
+	       }
+	       // hide();   
+	});
+	/*编辑*/
+	var back_button = $(".go_back");
+		back_button.on('touchstart',function(){
+			back_button.addClass('back_presss');
+		});
+		back_button.on('touchend',function(){
+			back_button.removeClass('back_presss');
+		});
+		back_button.click(function(){
+			window.history.back();
+	});
+</script>

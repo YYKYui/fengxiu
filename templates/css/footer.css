@@ -1,0 +1,135 @@
+@media screen and (max-width: 55em) {
+	.warp {
+		margin-top: 48px;
+	}
+
+	.bunner_footer {
+		width: 20%;
+		font-size: 18px;
+		line-height: 20px;
+		color: #667887;
+		float: left;
+		text-align: center;
+		height: 100%;
+		line-height: 50px;
+		text-transform: none;
+		text-decoration: none;
+		position: relative;
+
+	}
+
+	.bunner_footer:last-child {
+		border-right: none;
+	}
+
+	.bottom-style {
+		background: #FFFFFF;
+		width: 100%;
+		position: fixed;
+		bottom: 0px;
+		z-index: 1;
+		left: 0;
+	}
+
+	.login-path {
+		height: 54px;
+		width: 100%;
+		display: inline-block;
+
+	}
+
+	.login-icon {
+		background: url(../img/login.png) no-repeat center;
+		background-size: 3.375rem auto;
+		height: 54px;
+	}
+
+	.homepage-icon {
+		background: url(../img/homepage.png) no-repeat center;
+		background-size: 3.375rem auto;
+		height: 54px;
+	}
+	.footer_indexicon {
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		height: 24px;
+		width: 24px;
+		background: url(../image/footer_index.png) no-repeat center;
+		background-size: 24px 24px;
+	}
+
+	.footer_shopicon {
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		height: 24px;
+		width: 24px;
+		background: url(../image/footer_shop.png) no-repeat center;
+		background-size: 24px 24px;
+	}
+
+	.footer_disicon {
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		height: 24px;
+		width: 24px;
+		background: url(../image/footer_quanzo.png) no-repeat center;
+		background-size: 24px 24px;
+	}
+
+	.footer_shoppingcaricon {
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		height: 24px;
+		width: 24px;
+		background: url(../image/footer_gouwucar.png) no-repeat center;
+		background-size: 24px 24px;
+	}
+
+	.footer_myinfoicon {
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
+		height: 24px;
+		width: 24px;
+		background: url(../image/footer_geren.png) no-repeat center;
+		background-size: 24px 24px;
+	}
+
+	.footer_text {
+		display: block;
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 3px;
+		line-height: 18px;
+		font-size: 14px;
+		color: #847d89;
+	}
+
+}
+
+.bunner_press {
+	background-color: #DDDDDD;
+	box-shadow: 1px 1px 11px 1px #667887;
+}
+
+.checked_page {
+	background: #eee;
+}
+
+sapn.clicked_icon {
+	background: #eee;
+	width: 24px;
+	width: 24px;
+	height: 24px;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 21px;
+	left: 50%;
+	margin-left: -12px;
+	opacity: 12%;
+}

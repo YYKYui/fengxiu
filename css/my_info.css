@@ -1,0 +1,254 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #DDDDDD;
+}
+/* a:hover{
+	background-color: #DDDDDD;
+} */
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+
+}
+.content {
+    margin-top: 54px;
+}
+.my_name_edit {
+	display: block;
+    width: 100%;
+    height: 100px;
+    background: #BACAC6;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.my_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: url(../img/my_info/touxiang.png) no-repeat;
+	background-size: 60px 60px;
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    margin-top: -30px;
+}
+.my_name {
+    height: 30px;
+    position: absolute;
+    left: 115px;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+	color: #FFFFFF;
+	font-family: "arial black";
+	font-weight: 600;
+}
+.my_gengduo {
+    width: 15px;
+    height: 26px;
+    background: url(../img/my_info/get_more.png) no-repeat;
+	background-size: 15px 26px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -12px;
+}
+.dingdan_debuff {
+    margin-top: 5px;
+	background-color: #FFFFFF;
+}
+.debuff_title {
+	height: 20px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+	font-size: 18px;
+}
+a.dingdan_moudle {
+	display: block;
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+a.check_dingdan {
+    display: block;
+    float: right;
+}
+a.tools_moudle {
+    display: block;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.my_dingdan{
+	float: left;
+}
+span.dingdan_icon_1 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/my_info/geren_1.png) no-repeat;
+	background-size: 40px 40px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+span.dingdan_icon_2 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+    background: url(../img/my_info/geren_2.png) no-repeat;
+    background-size: 40px 40px;
+}
+span.dingdan_icon_3 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+    background: url(../img/my_info/geren_3.png) no-repeat;
+    background-size: 40px 40px;
+}
+span.dingdan_icon_4 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+    background: url(../img/my_info/geren_4.png) no-repeat;
+    background-size: 40px 40px;
+}
+span.dingdan_icon_5 {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    font-size: 16px;
+    background: url(../img/my_info/geren_5.png) no-repeat;
+    background-size: 40px 40px;
+}
+span.dingdan_title {
+    color: #757575;
+    font-size: 16px;
+}
+.must_tools {
+    background: #fff;
+    margin-top: 4px;
+    padding-bottom: 30px;
+    margin-bottom: 54px;
+}
+.tool_title {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+}
+a.tools_moudle {
+    display: block;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+span.tools_icon_1 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/my_info/fenlei_1.png) no-repeat;
+	background-size: 30px 30px;
+	border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span.tools_icon_2 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/my_info/fenlei_2.png) no-repeat;
+    background-size: 30px 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span.tools_icon_3 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/my_info/fenlei_3.png) no-repeat;
+    background-size: 30px 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span.tools_icon_4 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/my_info/fenlei_4.png) no-repeat;
+    background-size: 30px 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span.tools_icon_5 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/my_info/fenlei_5.png) no-repeat;
+    background-size: 30px 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span.tools_icon_6 {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/my_info/fenlei_6.png) no-repeat;
+    background-size: 30px 30px;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+span.toolsicon_title {
+    display: block;
+    font-size: 16px;
+    color: #757575;
+    margin-bottom: 10px;
+}
+.get_more{
+	display: block;
+	width: 10px;
+	height: 16px;
+    float: right;
+	background: url(../img/my_info/get_more.png) no-repeat;
+	background-size: 10px 16px;
+	margin-left: 4px;
+	top: 50%;
+	margin-top: 4px;
+}
+.get_more_text{
+	color: #757575;
+}

@@ -1,0 +1,179 @@
+@media screen and (max-width: 630px){
+	.fenlei li{
+	    float: left;
+	    font-size: 16px;
+	    width: 25%;
+	    text-align: center;
+		color: #758a99;
+		padding-bottom: 4px;
+	}
+	.fenlei .fenlei-icon{
+		display: block;
+		height: 40px;
+		width: 40px;
+		margin: 0 auto;
+		margin-top: 8px;
+		background-size: 30px 30px;
+	}
+	.li-disicon{
+		background: url('../img/index_img/faxian.png') no-repeat center;
+	}
+	.li-xiufenicon{
+		background: url('../img/index_img/xiufen.png') no-repeat center;
+	}
+	.li-shopicon{
+		background: url('../img/index_img/shopping.png') no-repeat center;
+	}
+	.li-classesicon{
+		background: url('../img/index_img/classes.png') no-repeat center;
+	}
+	.li-zhichiicon{
+		background:url('../img/index_img/jishu.png') no-repeat center;
+	}
+	.li-newsicon{
+		background:url('../img/index_img/zixun.png') no-repeat center;
+	}
+	.li-pictureicon{
+		background:url('../img/index_img/tuku.png') no-repeat center;
+	}
+	.li-controlicon{
+		background:url('../img/index_img/kongzhi.png') no-repeat center;
+	}
+	.guangbo {
+	    width: 100%;
+	    border-top: 1px solid #e9e7ef;
+	    margin-top: 5px;
+		background: #FFFFFF;
+	}
+	.guangbo-icon {
+	    display: block;
+	    height: 56px;
+	    width: 56px;
+		float: left;
+		background: url('../img/index_img/guangbo.png') no-repeat center;
+		background-size: 46px 46px;
+	}
+	.guangbo-text{
+		padding-top: 6px;
+		display: block;
+		float: left;
+		font-size: 16px;
+		color: #758a99;
+		line-height: 40px;
+		height: 56px;
+		overflow: hidden;
+		width: 280px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		margin-left: 14px;
+	}
+	.fire-works {
+		font-size: 16px;
+		margin-bottom: 54px;
+		background-color: #FFFFFF;
+	}
+	.fire-title{
+		margin: 0;
+		padding: 0;
+		padding-left: 10px;
+		font-size: 18px;
+		
+	}
+	.fire-moudel {
+	    display: block;
+	    width: 50%;
+	    margin-top:20px;
+	    float: left;
+		position: relative;
+		padding-bottom:20px ;
+	}
+	.fire-link{
+		display: block;
+		width: 125px;
+		height: 120px;
+		margin: 0 auto;
+		background-color: #000000;
+	}
+	.span-fire-title{
+		display: block;
+		margin-top: 10px;
+		text-align: center;	
+		line-height: 20px;
+		height: 20px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.fire-message {
+	    height: 18px;
+	    width: 34px;
+	    position: absolute;
+		left: 10px;
+	}
+	.fire-good{
+		height: 18px;
+		width: 34px;
+		position: absolute;
+		right: 10px;
+	}
+	.fire-message-icon{
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		background: url('../img/index_img/fire_message.png') no-repeat center;
+		background-size: 18px 18px;
+	}
+	.fire-good-icon{
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		background: url('../img/index_img/fire_dianzan.png') no-repeat center;
+		background-size: 18px 18px;
+	}
+	.fire-message-text,.fire-good-text{
+		font-size: 16px;
+		line-height: 16px;
+		color: #847d89;
+	}
+	.fire-message-text{
+		position: absolute;
+		top: 2px;
+	}
+	.fire-good-text{
+		position: absolute;
+		top: 2px;
+	}
+	ul.fenlei.clearfix {
+	    background: #fff;
+	}
+	
+}
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+
+}
+/*包含以下四种的链接*/
+a {
+    text-decoration: none;
+	color: #758a99;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}

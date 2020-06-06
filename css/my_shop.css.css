@@ -1,0 +1,150 @@
+p{
+	margin: 0;
+	padding: 0;
+}
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+
+}
+.shop_ops {
+    background: #fff;
+	font-size: 14px;
+}
+.shop_op_1 {
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+	padding-bottom: 8px;
+}
+.shop_op_2 {
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.shop_op_3 {
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.shop_op_4 {
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+    padding-bottom: 8px;
+}
+span.shop_op_1_icon {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background: url(../img/my_shop/shop_op1.png) no-repeat;
+    margin: 0 auto;
+    background-size: 33px 33px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+span.shop_op_2_icon {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background: url(../img/my_shop/shop_op2.png) no-repeat;
+    margin: 0 auto;
+    background-size: 33px 33px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+span.shop_op_3_icon {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background: url(../img/my_shop/shop_op3.png) no-repeat;
+    margin: 0 auto;
+    background-size: 33px 33px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+span.shop_op_4_icon {
+    display: block;
+    width: 33px;
+    height: 33px;
+    background: url(../img/my_shop/shop_op4.png) no-repeat;
+    margin: 0 auto;
+    background-size: 33px 33px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+.jingxuan_shop {
+	background: #fff;
+    /* margin-top: 5px; */
+    font-size: 14px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+span.jingxuan_shop_title {
+    display: block;
+    float: left;
+    padding: 10px;
+    font-size: 16px;
+}
+span.jingxuan_getmore {
+    display: block;
+    float: right;
+    padding: 10px;
+    font-size: 16px;
+    position: relative;
+    padding-right: 30px;
+	color: #757575;
+}
+span.jingxuan_getmore_icon {
+    display: block;
+    width: 10px;
+    height: 16px;
+    background: url(../img/my_info/get_more.png) no-repeat;
+	background-size: 100%;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    margin-top: -9px;
+}
+.jingxuan_content_pic {
+    margin: 10px;
+    height: 120px;
+    /* width: 95%; */
+    /* margin: 0 auto; */
+    background: url(../img/my_shop/shop_document_pic1.png) no-repeat;
+	background-size:100% 100%;
+}
+p.jingxuan_content_title {
+    margin-left: 10px;
+	margin-right: 10px;
+	line-height: 20px;
+	padding-bottom: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 16px;
+}
+p.jingxuan_content_price{
+	color: red;
+	font-size: 16px;
+	margin: 0 10px;
+	margin-bottom: 10px;
+}
+.jingxuan{
+	margin-top:5px ;
+}
+
+.jingxuan_content {
+    display: block;
+    border-bottom: 1px solid #eee;
+    /* padding-bottom: 10px; */
+}
