@@ -163,7 +163,7 @@ p.xiufen_content_title {
     margin-top: 10px;
 }
 span.xiufen_content_icon {
-    display: inline-block;
+    float: left;
     width: 34px;
     height: 34px;
     border-radius: 34px;
@@ -171,7 +171,7 @@ span.xiufen_content_icon {
     background-size: 34px 34px;
 }
 .xiufen_content_user {
-    display: inline-block;
+	float: left;
     margin-left: 5px;
     line-height: 20px;
     color: #757575;
