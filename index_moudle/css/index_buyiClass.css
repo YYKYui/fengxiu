@@ -1,0 +1,269 @@
+.buyi_Class_index {
+    background: #fff;
+    height: 100%;
+    padding-top: 5px;
+}
+a.biyu_Class_index_img {
+    display: block;
+    width: 95%;
+    height: 200px;
+    margin: 0 auto;
+    background: url(../image/buyiClass/biyiclass_titleicon.png) no-repeat;
+    background-size: 100% 100%;
+}
+.biyi_work{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.buyi_title {
+    width: 95%;
+    height: 30px;
+    margin: 0 auto;
+}
+span.buyi_title_name {
+    display: block;
+    float: left;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.buyi_getmore {
+    float: right;
+}
+span.buyi_getmore_title {
+    display: block;
+    float: left;
+	color: #999999;
+}
+span.buyi_getmore_icon {
+    display: block;
+    width: 18px;
+    height: 22px;
+    background: url(../../img/my_info/get_more.png) no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    margin-left: 5px;
+}
+.buyi_work_top {
+    width: 100%;
+    margin-top: 20px;
+	height: 142px;
+	position: relative;
+}
+.buyi_work_2 {
+    float: left;
+    width: 33%;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    height: 140px;
+    /* position: relative; */
+    position: absolute;
+    left: 0;
+}
+.buyi_work_2_background {
+    /* position: absolute; */
+    width: 41px;
+    height: 24px;
+    background: #FFFFFF;
+    background-size: 100% 100%;
+    left: 50%;
+    margin-left: -30px;
+    /* top: -1px; */
+    margin: 0 auto;
+}
+span.buyi_work_2_icon {
+    display: block;
+    height: 24px;
+    background: url(../image/buyiClass/biyitop_2.png) no-repeat;
+    background-size: 100% 100%;
+}
+.buyi_work_2_uesrbackground {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border: 1px solid #89abed;
+    border-radius: 60px;
+	margin-top: 4px;
+}
+span.buyi_work_2_uesricon {
+    display: block;
+    width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: url(../../img/my_info/touxiang.png) no-repeat;
+	background-size: 100% 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+p.buyi_work_2_username {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+p.biyi_work_2_userclass {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    margin-top: 5px;
+}
+
+
+.buyi_work_1 {
+    float: left;
+    width: 33%;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    height: 150px;
+    position: absolute;
+    left: 33%;
+    bottom: 0;
+    border-right: 1px solid #999999;
+    border-left: 1px solid #999999;
+}
+.buyi_work_1_background {
+    width: 41px;
+    height: 24px;
+    background: #FFFFFF;
+    background-size: 100% 100%;
+    left: 50%;
+    margin-left: -30px;
+    margin: 0 auto;
+}
+span.buyi_work_1_icon {
+    display: block;
+    height: 24px;
+    background: url(../image/buyiClass/biyitop_1.png) no-repeat;
+    background-size: 100% 100%;
+}
+.buyi_work_1_uesrbackground {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border: 1px solid #eeb36e;
+    border-radius: 60px;
+	margin-top: 14px;
+}
+span.buyi_work_1_uesricon {
+    display: block;
+    width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: url(../../img/my_info/touxiang.png) no-repeat;
+	background-size: 100% 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+p.buyi_work_1_username {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+p.biyi_work_1_userclass {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    color: #99999975;
+    margin-top: 5px;
+}
+
+.buyi_work_3 {
+    float: left;
+    width: 33.3%;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    height: 140px;
+    position: absolute;
+    left: 66.6%;
+}
+.buyi_work_3_background {
+    width: 41px;
+    height: 24px;
+    background: #FFFFFF;
+    background-size: 100% 100%;
+    left: 50%;
+    margin-left: -30px;
+    margin: 0 auto;
+}
+span.buyi_work_3_icon {
+    display: block;
+    height: 24px;
+    background: url(../image/buyiClass/biyitop_3.png) no-repeat;
+    background-size: 100% 100%;
+}
+.buyi_work_3_uesrbackground {
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    border: 1px solid #c38da8;
+    border-radius: 60px;
+	margin-top: 4px;
+}
+span.buyi_work_3_uesricon {
+    display: block;
+    width: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: url(../../img/my_info/touxiang.png) no-repeat;
+	background-size: 100% 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+p.buyi_work_3_username {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+p.biyi_work_3_userclass {
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    font-size: 12px;
+    color: #99999975;
+    margin-top: 5px;
+}
+.biyi_class_jingxuan {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.buyi_title {
+    width: 95%;
+    height: 30px;
+    margin: 0 auto;
+}
+a.biyi_jingxuan_icon {
+    display: block;
+    width: 90%;
+    height: 140px;
+    margin: 0 auto;
+    background: url(../image/buyiClass/biyiclass_contenticon.png) no-repeat;
+	background-size: 100% 100%;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.lode_more {
+    height: 60px;
+    text-align: center;
+    color: #9999;
+}

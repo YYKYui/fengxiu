@@ -1,0 +1,53 @@
+a.zixun_content_docunment {
+    display: block;
+    width: 100%;
+    height: 220px;
+    background: #fff;
+    padding-top: 5px;
+	margin-bottom: 4px;
+}
+.zixun_content_docunment_img {
+    width: 95%;
+    height: 140px;
+    margin: 0 auto;
+    background: url(../image/zixun/zixun_pic.png) no-repeat;
+    background-size: 100% 100%;
+	margin-top: 10px;
+}
+p.zixun_content_docunment_title {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: black;
+    font-family: "heiti";
+    font-weight: 700;
+	font-size: 16px;
+	text-overflow:ellipsis; 
+	white-space:nowrap;
+	overflow:hidden;
+	
+}
+.zixun_content_docunment_others {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+	font-size: 14px;
+}
+.zixun_content_docunment_date {
+    float: left;
+}
+span.zixun_content_docunment_date_icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url(../image/teace/date_icon.png) no-repeat;
+	background-size: 100% 100%;
+}
+span.zixun_content_docunment_date_text {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    height: 20px;
+    line-height: 20px;
+}
