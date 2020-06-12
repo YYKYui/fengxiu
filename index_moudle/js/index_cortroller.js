@@ -1,6 +1,5 @@
 $(function(){
 	// upload docunment
-	window.Android.intostart();
 	var mobilerestart = window.Android.intostart();
 	console.log("mobilerestart:"+mobilerestart)
 	if(mobilerestart == true){
