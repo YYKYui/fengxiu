@@ -12,17 +12,17 @@ $(function(){
 			$(".loading_dst_tishi").text("读取花样列表失败，请退出重试")
 		}
 		
-		window.Android.Wenjian();
-		var timerPnghost = setInterval(function(){
-			window.Android.Imagepng();
-			var imagedata = window.Android.Imagepng();
-			if(imagedata==undefined){
-				$(".dst_zhanshi").text("传输失败请重新上传图片")
-			}else{
-				var draw_table = document.getElementById("draw_table");
-				$("#draw_table").attr("src", "data:image/png;base64," + imagedata)
-			}
-		},1111);
+		// window.Android.Wenjian();
+		// var timerPnghost = setInterval(function(){
+		// 	window.Android.Imagepng();
+		// 	var imagedata = window.Android.Imagepng();
+		// 	if(imagedata==undefined){
+		// 		$(".dst_zhanshi").text("传输失败请重新上传图片")
+		// 	}else{
+		// 		var draw_table = document.getElementById("draw_table");
+		// 		$("#draw_table").attr("src", "data:image/png;base64," + imagedata)
+		// 	}
+		// },1111);
 	})
 	
 		
