@@ -1,13 +1,15 @@
 $(function(){
 	// upload docunment
-
+	
+	var loading_dst = $(".loading_dst");
 	
 	
 	$(".container_cortroller_jiben_8").click(function(){
-		$(".loading_dst").removeClass("none");
+		loading_dst.removeClass("none");
+		console.log(loading_dst)
 		var mobilerestart = window.Android.intostart();
 		if(mobilerestart == "true"){
-			$(".loading_dst").addClass("none");
+			loading_dst.addClass("none");
 		}else{
 			$(".loading_dst_tishi").text("读取花样列表失败，请退出重试")
 		}
