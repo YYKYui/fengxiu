@@ -6,6 +6,28 @@
 	height: 225px;
 	background: white;
 }
+.loading_dst {
+    height: 9999PX;
+    width: 100%;
+    background: #FFF;
+    Z-INDEX: 10000;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+}
+div.loading_dst_tishi{
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 150px;
+    margin: 0 auto;
+    margin-top: 200px;
+	border-radius: 10px;
+	border: 2px dashed #e26a93;
+	font-size: 16px;
+	font-weight: 700;
+
+}
 
 .warp_cortroller {
 	min-height: 345px;
