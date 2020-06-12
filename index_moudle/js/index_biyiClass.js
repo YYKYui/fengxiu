@@ -17,5 +17,20 @@ $(function() {
 		//var i = $('.pagination').index(this);//下标第二种写法
 		$(this).addClass('selected').siblings().removeClass('selected');
 		$('#contents li').eq(i).show().siblings().hide();
+		var li_dataDis = $(this).attr("data-dis")
+		console.log("li_dataDis:"+li_dataDis)
+		$(".buyi_more_show").each(function(){
+			var data_hotvalue = $(this).attr("data-hot");
+			
+			var data_newvalue = $(this).attr("data-new");
+			
+			if(li_dataDis == data_hotvalue){
+				$(this).hide();
+			}else if(li_dataDis == data_newvalue){
+				$(this).hide();
+			}else{
+				$(this).show();
+			}
+		})
 	});
 })
