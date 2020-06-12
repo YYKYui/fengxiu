@@ -1,6 +1,7 @@
 $(function(){
 	// upload docunment
 	var mobilerestart = window.Android.intostart;
+	console.log("mobilerestart:"+mobilerestart)
 	if(mobilerestart == true){
 		$(".loading_dst").addClass("none");
 	}else{
