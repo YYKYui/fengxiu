@@ -267,3 +267,51 @@ a.biyi_jingxuan_icon {
     text-align: center;
     color: #9999;
 }
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.box_center {
+	width: 100%;
+	height: 40px;
+	margin-top: -4px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.box_center .pagination {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.box_center .pagination li {
+	width: 18%;
+	height: 100%;
+	list-style: none;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 12px;
+	color: #E9E7EF;
+}
+
+.box_center .pagination .selected {
+	color: #757575;
+	border-bottom: 2px solid #757575;
+	height: 38px;
+}
+
+a.buyi_more_show{
+	width: 100%;
+	height: 140px;
+	background: #FFFFFF;
+}
