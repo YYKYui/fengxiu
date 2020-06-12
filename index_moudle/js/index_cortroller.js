@@ -8,6 +8,7 @@ $(function(){
 		loading_dst.removeClass("none");
 		var filenum = window.Android.filenum();
 		filenum = filenum*0.2;
+		console.log(filenum)
 		var get_listTimeout = setTimeout(function(){
 			var mobilerestart = window.Android.intostart();
 			if(mobilerestart == "true"){
@@ -16,7 +17,7 @@ $(function(){
 			}else{
 				$(".loading_dst_tishi").text("读取花样列表失败，请退出重试")
 			}
-		},filenum+1);
+		},filenum);
 		
 		
 		
