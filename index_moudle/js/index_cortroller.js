@@ -1,16 +1,16 @@
 $(function(){
 	// upload docunment
 	var mobilerestart = window.Android.intostart();
-	// console.log("mobilerestart:"+mobilerestart)
-	// if(mobilerestart == true){
-	// 	$(".loading_dst").addClass("none");
-	// }else{
-	// 	$(".loading_dst_tishi").text("读取花样列表失败，请退出重试")
-	// }
+	if(mobilerestart == true){
+		$(".loading_dst").addClass("none");
+	}else{
+		$(".loading_dst_tishi").text("读取花样列表失败，请退出重试")
+	}
 	
 	
 	$(".container_cortroller_jiben_8").click(function(){
 		window.Android.Wenjian();
+		timerPnghost.clear();
 		var timerPnghost = setInterval(function(){
 			window.Android.Imagepng();
 			var imagedata = window.Android.Imagepng();
