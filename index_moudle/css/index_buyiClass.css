@@ -294,7 +294,7 @@ a.biyi_jingxuan_icon {
 }
 
 .box_center .pagination li {
-	width: 18%;
+	width: 33.3%;
 	height: 100%;
 	list-style: none;
 	font-size: 20px;
@@ -367,4 +367,34 @@ p.buyi_more_writer {
 	padding-left: 10px;
 	color: #757575;
 	font-weight: 550;
+}
+
+.allin_fenlei {
+    width: 100%;
+    background: #E9E7EF;
+    position: absolute;
+    top: 0px;
+    color: #757575;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.allin_fenlei_div {
+    width: 45%;
+    float: left;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px 10px;
+}
+.allin_show_fenlei{
+	width: 40px;
+	position: fixed;
+	top: 0px;
+	font-size: 14px;
+	line-height:14px;
+	background-color: #fff;
+	z-index: 3;
+	right: 10px;
+	padding: 11px 0;
 }
