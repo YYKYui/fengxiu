@@ -380,12 +380,12 @@ p.buyi_more_writer {
     font-size: 14px;
 }
 .allin_fenlei_div {
-    width: 45%;
+    width: 50%;
     float: left;
     height: 50px;
     text-align: center;
     line-height: 50px;
-    margin: 5px 10px;
+    margin: 5px 0;
 }
 .allin_show_fenlei{
 	width: 40px;
