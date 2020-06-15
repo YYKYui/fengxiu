@@ -1,0 +1,180 @@
+.zixun_content_user {
+	height: 54px;
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #dcdcdc;
+}
+
+.zixun_content_user_icon {
+	height: 40px;
+	width: 40px;
+	background: url(../../../img/my_info/touxiang.png) no-repeat;
+	background-size: 40px 40px;
+	border-radius: 30px;
+	margin-left: 10px;
+	float: left;
+	margin-top: 7px;
+}
+
+.zixun_content_user_name {
+	float: left;
+	/* width: 20px; */
+	height: 20px;
+	line-height: 20px;
+	margin-top: 17px;
+	margin-left: 10px;
+	font-size: 18px;
+	font-weight: 700;
+	/* border-bottom: 1px solid; */
+}
+
+.zixun_content_docunmet {
+	background: #fff;
+	padding-top: 30px;
+}
+
+p.zixun_content_docunment_title {
+	text-align: center;
+	margin-bottom: 20px;
+	line-height: 16px;
+	font-weight: 700;
+	font-size: 16px;
+	height: 16px;
+}
+
+.zixun_content_docunment_others_data {
+	float: left;
+}
+
+.zixun_content_docunment_others_pinglun {
+	float: left;
+}
+
+.zixun_content_docunment_others_dianzan {
+	float: left;
+}
+
+.zixun_content_docunment_others.clearfix {
+	width: 250px;
+	margin: 0 auto;
+}
+
+span.zixun_content_docunment_others_data_icon {
+	display: block;
+	float: left;
+	width: 14px;
+	height: 14px;
+	background: url(../../image/teace/date_icon.png) no-repeat;
+	margin-right: 8px;
+	background-size: 14px 14px;
+}
+
+span.zixun_content_docunment_others_data_text {
+	display: block;
+	width: 80px;
+	float: left;
+	font-size: 14px;
+	line-height: 14px;
+	color: #999999;
+	border-right: 2px solid #999;
+}
+
+span.zixun_content_docunment_others_pinglun_icon {
+	display: block;
+	float: left;
+	width: 14px;
+	height: 14px;
+	background: url(../../../img/index_img/fire_message.png) no-repeat;
+	background-size: 14px 14px;
+	/* background: 14px; */
+	margin: 0 8px;
+}
+
+span.zixun_content_docunment_others_pinglun_text {
+	display: block;
+	float: left;
+	font-size: 14px;
+	width: 40px;
+	height: 14px;
+	line-height: 14px;
+	border-right: 2px solid #999999;
+	color: #999999;
+}
+
+span.zixun_content_docunment_others_dianzan_icon {
+	display: block;
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin: 0 8px;
+	background: url(../../../img/index_img/fire_dianzan.png) no-repeat;
+	background-size: 14px 14px;
+}
+
+span.zixun_content_docunment_others_dianzan_text {
+	display: block;
+	float: left;
+	width: 40px;
+	font-size: 14px;
+	line-height: 14px;
+	height: 14px;
+	color: #999;
+}
+
+p.zixun_content_docunment_neirong {
+	margin-top: 20px;
+	padding: 0 10px;
+	text-align: justify;
+	line-height: 21px;
+	font-size: 14px;
+	text-indent: 2em;
+	margin-bottom: 10px;
+}
+
+.zixun_content_docunment_img_div {
+	padding: 0 10px;
+	padding-bottom: 15px;
+}
+
+.zixun_content_liuyan {
+	margin-top: 4px;
+	background-color: #FFFFFF;
+}
+
+.zixun_content_liuyan_title {
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.zixun_content_liuyan_document {
+	min-height: 150px;
+	padding: 0 10px;
+}
+
+.zixun_content_liuyan_document_none {
+	width: 220px;
+	height: 50px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	color: #999;
+	line-height: 50px;
+	text-align: center;
+}
+
+.liuyan_button {
+	display: block;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	/* border: 0; */
+	bottom: 0;
+	text-align: center;
+	line-height: 50px;
+	background: #fff;
+	border-top: 1px solid red;
+}

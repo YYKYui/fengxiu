@@ -8,7 +8,6 @@ $(function() {
 		var windowHeight = $(this).height();
 		//此处是滚动条到底部时候触发的事件，在这里写要加载的数据，或者是拉动滚动条的操作
 		if (scrollTop + windowHeight == scrollHeight) {
-			console.log("111111")
 		}
 	});
 
