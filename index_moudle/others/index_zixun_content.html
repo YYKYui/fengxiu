@@ -14,6 +14,21 @@
 	<body>
 		<div id="header"></div>
 		<div class="content">
+			<div class="star_offdanmu">开启弹幕</div>
+			<div class="dm dm_caozuo none">
+				<!--d_screen start-->
+				<div class="d_screen">
+					<a href="#" class="d_del">X</a>
+					<div class="d_mask"></div>
+					<div class="d_show">
+						<div style="color:#C0504D;font-size:19px;">缝绣家园nb！！！！！！！！！！</div>
+						<div style="color:#4BACC6;font-size:26px;">中国缝绣的领军者</div>
+						<div style="color:#C0504D;font-size:16px;">内容详实</div>
+						<div style="color:#8064A2;font-size:20px;">超级好用</div>
+						<div style="color:#C0504D;font-size:21px;">确实是没有见过的船新版本</div>
+					</div>
+				</div>
+			</div>
 			<div class="zixun_content_user">
 				<div class="zixun_content_user_icon"></div>
 				<div class="zixun_content_user_name">超级无敌大帅比</div>
@@ -59,6 +74,17 @@
 			<a class="liuyan_button" href="../index_liuyan.html">
 				留个脚印
 			</a>
+
+			<div class="danmu_context none">
+					<div class="input_danmu">
+						<input id="reply-write" name="content" type="text" value="" placeholder="请输入评论">
+					</div>
+					<div class="send-btn" onClick="send_reply2()">
+						发射
+					</div>
+			</div>
+			<span class="error_nodanmu none">亲，请输入你的想说的话</span>
+			
 		</div>
 	</body>
 	<script src="../../js/public/jquery.js" type="text/javascript" charset="utf-8"></script>
@@ -70,4 +96,5 @@
 		$("#header").load("../../templates/header.html")
 		$("#footer").load("../../templates/footer.html")
 	</script>
+	<script src="js/index_danmu.js"></script>
 </html>

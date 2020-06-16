@@ -14,6 +14,12 @@
 	<body>
 		<div id="header"></div>
 		<div class="content">
+			<form action="" method="get" id="liuyan_from">
+				<textarea name="liuyan_message" class="liuyan-message" placeholder="留个脚印吧" maxlength="120"></textarea>
+				<span class="error_message_xianshi none"></span>
+				<span class="word_math">0/120</span>
+				<input class="submit_button" type="button" value="提交"/>
+			</form>
 		</div>
 	</body>
 	<script src="../js/public/jquery.js" type="text/javascript" charset="utf-8"></script>
@@ -25,4 +31,7 @@
 		$("#header").load("../templates/header.html")
 		$("#footer").load("../templates/footer.html")
 	</script>
+	<script src="https://cdn.bootcss.com/FileSaver.js/2014-11-29/FileSaver.js"></script>
+	<script src="js/index_liuyan.js" type="text/javascript" charset="utf-8"></script>
+	
 </html>

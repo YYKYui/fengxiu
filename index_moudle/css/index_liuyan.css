@@ -1,0 +1,61 @@
+input:focus, textarea:focus {
+    outline: none;
+}
+.liuyan-message{
+	display: block;
+	border:0;
+	border-radius:5px;
+	background-color:#fff;
+	width: 90%;
+	height: 180px;
+	padding: 10px;
+	resize: none;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: justify;
+	font-weight: 600;
+}
+span.word_math {
+    display: block;
+    width: 60px;
+    height: 20px;
+    background: #fff;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 230px;
+}
+span.error_message_xianshi {
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -25px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+.submit_button{
+	display: block;
+	height: 50px;
+	width: 90%;
+	background-color: red;
+	margin: 0 auto;
+	margin-top: 50px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 10px;
+}
