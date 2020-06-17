@@ -52,7 +52,6 @@ $(function() {
 			loading_dst.removeClass("none");
 			var filenum = window.Android.filenum();
 			filenum = filenum * 0.2;
-			console.log(filenum)
 			var get_listTimeout = setTimeout(function() {
 				var mobilerestart = window.Android.intostart();
 				if (mobilerestart == "true") {
