@@ -66,8 +66,11 @@
 					</p>
 				</div>
 				<div class="zixun_content_liuyan_document">
-					<div class="zixun_content_liuyan_document_none">暂时还有留言</div>
-					<div class="zixun_content_liuyan_document_have"></div>
+					<div class="zixun_content_liuyan_document_load">加载中···</div>
+					<div class="zixun_content_liuyan_document_none none">暂时还有留言</div>
+					<div class="zixun_content_liuyan_document_have none">
+
+					</div>
 				</div>
 			</div>
 
@@ -76,18 +79,38 @@
 			</a>
 
 			<div class="danmu_context none">
-					<div class="input_danmu">
-						<input id="reply-write" name="content" type="text" value="" placeholder="请输入评论">
-					</div>
-					<div class="send-btn" onClick="send_reply2()">
-						发射
-					</div>
+				<div class="input_danmu">
+					<input id="reply-write" name="content" type="text" value="" placeholder="请输入评论">
+				</div>
+				<div class="send-btn" onClick="send_reply2()">
+					发射
+				</div>
 			</div>
 			<span class="error_nodanmu none">亲，请输入你的想说的话</span>
-			
 		</div>
+		<script type="text/x-jquery-tmpl" id="tml_liuyancontent">
+			<div class="zixun_content_liuyan_have">
+				<div class="zixun_content_liuyan_others">
+					<div class="zixun_content_liuyan_name">
+						<span class="icon_border">
+							<img src="../../img/my_info/touxiang.png" alt="" class="zixun_content_liuyan_img">
+						</span>
+						<p class="zixun_content_liuyan_name_text">${name}</p>
+					</div>
+					<div class="zixun_content_liuyan_datatime">
+						<p>
+							<span>2020-6-15</span>
+						</p>
+					</div>
+					<div class="zixun_content_liuyan_context_txt">
+						<p>${message}</p>
+					</div>
+				</div>
+			</div>
+		</script>
 	</body>
 	<script src="../../js/public/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/public/jquery.tmpl.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/eruda"></script>
 	<script type="text/javascript">
 		eruda.init();
@@ -96,5 +119,6 @@
 		$("#header").load("../../templates/header.html")
 		$("#footer").load("../../templates/footer.html")
 	</script>
+	<script src="js/index_zixun_content.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/index_danmu.js"></script>
 </html>

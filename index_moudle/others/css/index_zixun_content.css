@@ -154,6 +154,18 @@ p.zixun_content_docunment_neirong {
 	padding: 0 10px;
 }
 
+.zixun_content_liuyan_document_load{
+	width: 220px;
+	height: 50px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	color: #999;
+	line-height: 50px;
+	text-align: center;
+}
+
 .zixun_content_liuyan_document_none {
 	width: 220px;
 	height: 50px;
@@ -241,33 +253,37 @@ p.zixun_content_docunment_neirong {
 	heigth: 50px;
 	text-overflow: ellipsis;
 }
+
 .danmu_context {
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    background: #fff;
-    bottom: 0;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	background: #fff;
+	bottom: 0;
 }
+
 .input_danmu {
-    float: left;
-    width: 73%;
-    height: 100%;
-    line-height: 20px;
-    font-size: 16px;
-    color: black;
-    padding: 0 10px;
+	float: left;
+	width: 73%;
+	height: 100%;
+	line-height: 20px;
+	font-size: 16px;
+	color: black;
+	padding: 0 10px;
 }
+
 input#reply-write {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border: none;
-    /* padding-left: 10px; */
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	border: none;
+	/* padding-left: 10px; */
 }
+
 .send-btn {
-    width: 21%;
-    height: 100%;
-    line-height: 50px;
+	width: 21%;
+	height: 100%;
+	line-height: 50px;
 	text-align: center;
 	height: 100%;
 	font-size: 16px;
@@ -277,32 +293,112 @@ input#reply-write {
 }
 
 span.error_nodanmu {
-    display: block;
-    width: 220px;
-    height: 50px;
-    background: rgba(0,0,0,0.6);
-    text-align: center;
-    line-height: 50px;
-    border-radius: 10px;
-    position: fixed;
-    top: 50%;
-    margin-top: -25px;
-    left: 50%;
-    margin-left: -100px;
-    color: #fff;
+	display: block;
+	width: 220px;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	line-height: 50px;
+	border-radius: 10px;
+	position: fixed;
+	top: 50%;
+	margin-top: -25px;
+	left: 50%;
+	margin-left: -100px;
+	color: #fff;
 }
 
 .star_offdanmu {
-    width: 40px;
-    height: 40;
-    height: 40px;
-    background: rgba(0,0,0,0.2);
-    border-radius: 40px;
-    font-size: 14px;
-    text-align: center;
-    /* line-height: 20px; */
-    position: fixed;
-    top: 5px;
-    right: 10px;
+	width: 40px;
+	height: 40;
+	height: 40px;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 40px;
+	font-size: 14px;
+	text-align: center;
+	/* line-height: 20px; */
+	position: fixed;
+	top: 5px;
+	right: 10px;
 	z-index: 3;
+}
+
+.zixun_content_liuyan_have {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.zixun_content_liuyan_others {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	background: #fff;
+}
+
+.zixun_content_liuyan_name {
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.icon_border {
+	overflow: hidden;
+	margin: 0 auto;
+	display: block;
+	float: left;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+}
+
+.zixun_content_liuyan_img {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.zixun_content_liuyan_name_text {
+	overflow: hidden;
+	margin: 0 auto;
+	height: 44px;
+	line-height: 44px;
+	font-size: 16px;
+	color: #333333;
+	float: left;
+	margin-left: 10px;
+}
+
+.zixun_content_liuyan_datatime {
+	overflow: hidden;
+	margin: 0.5rem auto;
+	width: 100%;
+}
+
+.zixun_content_liuyan_datatime p {
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #cccccc;
+}
+
+.zixun_content_liuyan_datatime p span {
+	overflow: hidden;
+	margin: 0 auto;
+	margin-right: 10px;
+}
+
+.zixun_content_liuyan_context_txt {
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.zixun_content_liuyan_context_txt p {
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #333333;
 }
