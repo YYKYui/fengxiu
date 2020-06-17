@@ -62,7 +62,6 @@ $(function() {
 				}
 			}, filenum);
 			
-			clearTimeout(get_listTimeout)
 			huoqutimeer=setInterval(function(){
 				clearInterval(timerPnghost)
 				var dst_zongzhenshu = window.Android.zhenshu();
@@ -83,7 +82,6 @@ $(function() {
 			var qingchu = window.setTimeout(function(){
 				$(".error_message").addClass("none");
 			},2000)
-			clearTimeout(qingchu);
 		}
 	
 	})
