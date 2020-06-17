@@ -5,6 +5,14 @@
 	width: 100%;
 	height: 225px;
 	background: white;
+	position: relative;
+}
+canvas#wang_ge {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 225px;
+	opacity: 1;
 }
 .loading_dst {
     height: 9999PX;
