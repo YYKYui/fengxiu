@@ -3,8 +3,23 @@ $(function() {
 
 	var loading_dst = $(".loading_dst");
 
-	$(".container_cortroller_jiben_1_icon").click(function() {
-		window.Android.zhenshu(100)
+	$(".container_cortroller_jiben_1").click(function() {
+		var dst_zhenshu = 0;
+		var timerPnghost = setInterval(function() {
+			dst_zhenshu = dst_zhenshu + 8;
+			window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
+			var imagedata = window.Android.Imagepng(dst_zhenshu);
+			if (imagedata == undefined) {
+				$(".dst_zhanshi").text("传输失败请重新上传图片")
+			} else {
+				var draw_table = document.getElementById("draw_table");
+				$("#draw_table").attr("src", "data:image/png;base64," + imagedata)
+			}
+			
+			if(dst_zhenshu > 6000){
+				dst_zhenshu=6000;
+			}
+		}, 1111);
 	})
 	$(".container_cortroller_jiben_8").click(function() {
 		loading_dst.removeClass("none");
@@ -23,16 +38,14 @@ $(function() {
 
 
 
-		var timerPnghost = setInterval(function() {
-			window.Android.Imagepng(500); //0 为整图 数值为针数
-			var imagedata = window.Android.Imagepng(500);
-			if (imagedata == undefined) {
-				$(".dst_zhanshi").text("传输失败请重新上传图片")
-			} else {
-				var draw_table = document.getElementById("draw_table");
-				$("#draw_table").attr("src", "data:image/png;base64," + imagedata)
-			}
-		}, 1111);
+		window.Android.Imagepng(0); //0 为整图 数值为针数
+		var imagedata = window.Android.Imagepng(0);
+		if (imagedata == undefined) {
+			$(".dst_zhanshi").text("传输失败请重新上传图片")
+		} else {
+			var draw_table = document.getElementById("draw_table");
+			$("#draw_table").attr("src", "data:image/png;base64," + imagedata)
+		}
 	})
 
 
@@ -62,13 +75,13 @@ $(function() {
 		ctx.stroke();
 	}
 	var wangge_star_off = true;
-	$(".container_cortroller_jiben_background").click(function(){
-		if(wangge_star_off){
+	$(".container_cortroller_jiben_6 button_click").click(function() {
+		if (wangge_star_off) {
 			var dst_background = myCanvas.toDataURL('image/png', 1);
-			$(".dst_zhanshi").css("background","url("+dst_background+") repeat");
+			$(".dst_zhanshi").css("background", "url(" + dst_background + ") repeat");
 			wangge_star_off = false;
-		}else{
-			$(".dst_zhanshi").css("background","#fff");
+		} else {
+			$(".dst_zhanshi").css("background", "#fff");
 			wangge_star_off = true;
 		}
 	})
