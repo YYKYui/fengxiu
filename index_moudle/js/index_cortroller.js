@@ -1,25 +1,47 @@
 $(function() {
 	// upload docunment
-
+	
 	var loading_dst = $(".loading_dst");
-
+	var timerPnghost;
+	var dst_zhenshu = 0;
 	$(".container_cortroller_jiben_1").click(function() {
-		var dst_zhenshu = 0;
-		var timerPnghost = setInterval(function() {
-			dst_zhenshu = dst_zhenshu + 8;
-			window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
-			var imagedata = window.Android.Imagepng(dst_zhenshu);
-			if (imagedata == undefined) {
-				$(".dst_zhanshi").text("传输失败请重新上传图片")
-			} else {
-				var draw_table = document.getElementById("draw_table");
-				$("#draw_table").attr("src", "data:image/png;base64," + imagedata)
-			}
+		
+		if(dst_zhenshu==0){
 			
-			if(dst_zhenshu > 6000){
-				dst_zhenshu=6000;
-			}
-		}, 1111);
+			var dst_zongzhenshu = window.Android.zhenshu();
+			console.log(dst_zongzhenshu)
+			timerPnghost = setInterval(function() {
+				if ((dst_zhenshu < dst_zongzhenshu) && (dst_zongzhenshu - dst_zhenshu >8)) {
+					dst_zhenshu = dst_zhenshu + 8;
+					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
+					var imagedata = window.Android.Imagepng(dst_zhenshu);
+					if (imagedata == undefined) {
+						$(".dst_zhanshi").text("传输失败请重新上传图片")
+					} else {
+						var draw_table = document.getElementById("draw_table");
+						$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
+						$(".container_cortroller_message_zhenshu_2").text(dst_zongzhenshu);
+						$(".container_cortroller_message_zhenshu_math_1").text(dst_zhenshu);
+					}
+				} else {
+					dst_zhenshu = dst_zongzhenshu;
+					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
+					var imagedata = window.Android.Imagepng(dst_zhenshu);
+					if (imagedata == undefined) {
+						$(".dst_zhanshi").text("传输失败请重新上传图片")
+					} else {
+						var draw_table = document.getElementById("draw_table");
+						$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
+						$(".container_cortroller_message_zhenshu_2").text(dst_zongzhenshu);
+						$(".container_cortroller_message_zhenshu_math_1").text(dst_zhenshu);
+					}
+				}
+			}, 200);
+		}else if(dst_zhenshu>0){
+			
+			
+		}
+
 	})
 	$(".container_cortroller_jiben_8").click(function() {
 		loading_dst.removeClass("none");
