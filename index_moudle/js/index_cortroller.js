@@ -48,7 +48,7 @@ $(function() {
 
 	})
 	$(".container_cortroller_jiben_8").click(function() {
-		if(dst_zhenshu == dst_zongzhenshu || dst_zhenshu == 0){
+		if(dst_zhenshu == dst_zongzhenshu || dst_zhenshu == 0 || dst_zhenshu==undefined){
 			loading_dst.removeClass("none");
 			var filenum = window.Android.filenum();
 			filenum = filenum * 0.2;
