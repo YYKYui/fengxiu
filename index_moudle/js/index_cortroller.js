@@ -24,7 +24,7 @@ $(function() {
 					} else {
 						var draw_table = document.getElementById("draw_table");
 						$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
-
+						
 					}
 				} else {
 					dst_zhenshu = dst_zongzhenshu;
@@ -65,7 +65,7 @@ $(function() {
 			huoqutimeer=setInterval(function(){
 				clearInterval(timerPnghost)
 				var dst_zongzhenshu = window.Android.zhenshu();
-				$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
+				$(".container_cortroller_message_zhenshu_2").val("0");
 				$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
 				window.Android.Imagepng(0); //0 为整图 数值为针数
 				var imagedata = window.Android.Imagepng(0);
