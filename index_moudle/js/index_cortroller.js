@@ -6,7 +6,7 @@ $(function() {
 	var loading_dst = $(".loading_dst");
 	var timerPnghost;
 	var huoqutimeer;
-	var dst_zhenshu;
+	var dst_zhenshu=0;
 	var dst_zongzhenshu=0;
 	var iswork = false;
 	var imagedata;
@@ -58,10 +58,11 @@ $(function() {
 					} else {
 						var draw_table = document.getElementById("draw_table");
 						$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
-
+						clearInterval(timerPnghost);
+						dst_zhenshu=0;
 					}
 				}
-			}, 200);
+			}, 1000);
 			iswork = true;
 		}else{
 			var backgroundurl = "./image/cro_icon/cor_strat.png";
@@ -95,10 +96,11 @@ $(function() {
 					} else {
 						var draw_table = document.getElementById("draw_table");
 						$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
-			
+						clearInterval(timerPnghost);
+						dst_zhenshu=0;
 					}
 				}
-			}, 200);
+			}, 1000);
 			iswork = false;
 			
 		}
@@ -124,8 +126,8 @@ $(function() {
 				var dst_zongzhenshu = window.Android.zhenshu();
 				$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
 				$(".container_cortroller_message_zhenshu_math_1").val("0");
-				window.Android.Imagepng(0); //0 为整图 数值为针数
-				imagedata = window.Android.Imagepng(0);
+				window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
+				imagedata = window.Android.Imagepng(dst_zhenshu);
 				if (imagedata == undefined) {
 					$(".dst_zhanshi").text("传输失败请重新上传图片")
 				} else {
@@ -219,7 +221,8 @@ $(function() {
 		}else if(input_zhenshu_num == ""){
 			errormessage_text("输入值不能为空");
 		}else{
-			dst_zhenshu=input_zhenshu_num;
+			dst_zhenshu=Number(input_zhenshu_num);
+			
 			console.log(dst_zhenshu)
 			$(".input_motai").addClass("none");
 		}
