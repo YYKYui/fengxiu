@@ -6,10 +6,14 @@ $(function() {
 	var huoqutimeer;
 	var dst_zhenshu;
 	var dst_zongzhenshu;
+	var iswork = false;
 	$(".container_cortroller_jiben_1").click(function() {
 		clearInterval(huoqutimeer);
-		if(dst_zhenshu==undefined){
-			dst_zhenshu=0;
+		if(iswork == false){
+			if($(".container_cortroller_message_zhenshu_math_1").val()==0){
+				dst_zhenshu=0;
+			}
+			$(".container_cortroller_jiben_1_icon").css("background", "url("../image/cro_icon/cor_jixu.png") no-repeat");
 			dst_zongzhenshu = window.Android.zhenshu();
 			console.log(dst_zongzhenshu)
 			timerPnghost = setInterval(function() {
@@ -17,6 +21,39 @@ $(function() {
 					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
 					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
 					dst_zhenshu = dst_zhenshu + 8;
+					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
+					var imagedata = window.Android.Imagepng(dst_zhenshu);
+					if (imagedata == undefined) {
+						$(".dst_zhanshi").text("传输失败请重新上传图片")
+					} else {
+						var draw_table = document.getElementById("draw_table");
+						$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
+					}
+				} else {
+					dst_zhenshu = dst_zongzhenshu;
+					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
+					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
+					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
+					var imagedata = window.Android.Imagepng(dst_zhenshu);
+					if (imagedata == undefined) {
+						$(".dst_zhanshi").text("传输失败请重新上传图片")
+					} else {
+						var draw_table = document.getElementById("draw_table");
+						$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
+
+					}
+				}
+			}, 200);
+			iswork = true;
+		}else{
+			dst_zhenshu = dst_zhenshu;
+			dst_zongzhenshu = window.Android.zhenshu();
+			$(".container_cortroller_jiben_1_icon").css("background", "url("../image/cro_icon/cor_jixu.png") no-repeat");
+			timerPnghost = setInterval(function() {
+				if ((dst_zhenshu < dst_zongzhenshu) && (dst_zongzhenshu - dst_zhenshu >8)) {
+					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
+					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
+					dst_zhenshu = dst_zhenshu + 0;
 					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
 					var imagedata = window.Android.Imagepng(dst_zhenshu);
 					if (imagedata == undefined) {
@@ -37,12 +74,11 @@ $(function() {
 					} else {
 						var draw_table = document.getElementById("draw_table");
 						$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
-
+			
 					}
 				}
 			}, 200);
-		}else if(dst_zhenshu>0){
-			
+			iswork = false;
 			
 		}
 
