@@ -13,7 +13,8 @@ $(function() {
 			if($(".container_cortroller_message_zhenshu_math_1").val()==0){
 				dst_zhenshu=0;
 			}
-			$(".container_cortroller_jiben_1_icon").css("background", "url("../image/cro_icon/cor_jixu.png") no-repeat");
+			var background_url = "../image/cro_icon/cor_jixu.png";
+			$(".container_cortroller_jiben_1_icon").css("background", "url("+ background_url +") no-repeat");
 			dst_zongzhenshu = window.Android.zhenshu();
 			console.log(dst_zongzhenshu)
 			timerPnghost = setInterval(function() {
@@ -48,7 +49,8 @@ $(function() {
 		}else{
 			dst_zhenshu = dst_zhenshu;
 			dst_zongzhenshu = window.Android.zhenshu();
-			$(".container_cortroller_jiben_1_icon").css("background", "url("../image/cro_icon/cor_jixu.png") no-repeat");
+			var backgroundurl = "../image/cro_icon/cor_start.png";
+			$(".container_cortroller_jiben_1_icon").css("background", "url("+backgroundurl+") no-repeat");
 			timerPnghost = setInterval(function() {
 				if ((dst_zhenshu < dst_zongzhenshu) && (dst_zongzhenshu - dst_zhenshu >8)) {
 					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
