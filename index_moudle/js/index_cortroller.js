@@ -7,15 +7,25 @@ $(function() {
 	var dst_zhenshu;
 	var dst_zongzhenshu;
 	var iswork = false;
+	var imagedata;
 	$(".container_cortroller_jiben_1").click(function() {
-		var background_url = "./image/cro_icon/cor_jixu.png";
-		$(".container_cortroller_jiben_1_icon").css("background", "url("+ background_url +") no-repeat");
 		clearInterval(huoqutimeer);
 		clearInterval(timerPnghost);
+		if(imagedata == undefined){
+			$(".error_message").removeClass("none");
+			$(".error_message").text("请先上传文件，再进行刺绣操作")
+			var qingchu = window.setTimeout(function(){
+				$(".error_message").addClass("none");
+			},2000)
+			return false
+		}
+		var background_url = "./image/cro_icon/cor_jixu.png";
+		$(".container_cortroller_jiben_1_icon").css("background", "url("+ background_url +") no-repeat");
 		if(iswork == false){
 			if($(".container_cortroller_message_zhenshu_math_1").val()==0){
 				dst_zhenshu=0;
 			}
+
 			dst_zongzhenshu = window.Android.zhenshu();
 			timerPnghost = setInterval(function() {
 				if ((dst_zhenshu < dst_zongzhenshu) && (dst_zongzhenshu - dst_zhenshu >8)) {
@@ -23,7 +33,7 @@ $(function() {
 					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
 					dst_zhenshu = dst_zhenshu + 8;
 					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
-					var imagedata = window.Android.Imagepng(dst_zhenshu);
+					imagedata = window.Android.Imagepng(dst_zhenshu);
 					if (imagedata == undefined) {
 						$(".dst_zhanshi").text("传输失败请重新上传图片")
 					} else {
@@ -35,7 +45,7 @@ $(function() {
 					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
 					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
 					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
-					var imagedata = window.Android.Imagepng(dst_zhenshu);
+					imagedata = window.Android.Imagepng(dst_zhenshu);
 					if (imagedata == undefined) {
 						$(".dst_zhanshi").text("传输失败请重新上传图片")
 					} else {
@@ -58,7 +68,7 @@ $(function() {
 					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
 					dst_zhenshu = dst_zhenshu + 0;
 					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
-					var imagedata = window.Android.Imagepng(dst_zhenshu);
+					imagedata = window.Android.Imagepng(dst_zhenshu);
 					if (imagedata == undefined) {
 						$(".dst_zhanshi").text("传输失败请重新上传图片")
 					} else {
@@ -71,7 +81,7 @@ $(function() {
 					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
 					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
 					window.Android.Imagepng(dst_zhenshu); //0 为整图 数值为针数
-					var imagedata = window.Android.Imagepng(dst_zhenshu);
+					imagedata = window.Android.Imagepng(dst_zhenshu);
 					if (imagedata == undefined) {
 						$(".dst_zhanshi").text("传输失败请重新上传图片")
 					} else {
@@ -107,7 +117,7 @@ $(function() {
 				$(".container_cortroller_message_zhenshu_2").val("0");
 				$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
 				window.Android.Imagepng(0); //0 为整图 数值为针数
-				var imagedata = window.Android.Imagepng(0);
+				imagedata = window.Android.Imagepng(0);
 				if (imagedata == undefined) {
 					$(".dst_zhanshi").text("传输失败请重新上传图片")
 				} else {
@@ -131,8 +141,6 @@ $(function() {
 	var gridSize = 10;
 	var canvasHeight = ctx.canvas.height;
 	var canvasWidth = ctx.canvas.width;
-	console.log(ctx.canvas.height);
-	console.log(ctx.canvas.width);
 	var xLineTotal = Math.floor(canvasHeight / gridSize);
 	for (var i = 0; i <= xLineTotal; i++) {
 		ctx.beginPath();
