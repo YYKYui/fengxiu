@@ -7,7 +7,7 @@ $(function() {
 	var timerPnghost;
 	var huoqutimeer;
 	var dst_zhenshu;
-	var dst_zongzhenshu;
+	var dst_zongzhenshu=0;
 	var iswork = false;
 	var imagedata;
 	
@@ -153,6 +153,8 @@ $(function() {
 		clearInterval(huoqutimeer);
 		clearInterval(timerPnghost);
 		imagedata = undefined;
+		dst_zhenshu=0;
+		dst_zongzhenshu=0;
 		$("#draw_table").attr("src", "");
 		$(".container_cortroller_message_zhenshu_2").val("9999");
 		$(".container_cortroller_message_zhenshu_math_1").val("0");
@@ -194,5 +196,31 @@ $(function() {
 			wangge_star_off = true;
 		}
 	})
+	$(".container_cortroller_message_zhenshu").click(function(){
+		if(imagedata==undefined){
+			errormessage_text("请先上传花样")
+		}else{
+			$(".input_motai").removeClass("none")
+		}
+	})
+	
+	$(".is_inputmath_no").click(function(){	
+		$(".input_zhenshu_num").val("");
+		$(".input_motai").addClass("none");
+	})
+	
+	$(".is_inputmath_yes").click(function(){
+		var input_zhenshu_num = $(".input_zhenshu_num").val().trim();
+		console.log(dst_zongzhenshu)
+		if(input_zhenshu_num>dst_zongzhenshu){
+			errormessage_text("针数不能超过"+dst_zongzhenshu+"针");
+		}else if(input_zhenshu_num == ""){
+			errormessage_text("输入值不能为空");
+		}else{
+			dst_zhenshu=input_zhenshu_num;
+			$(".input_motai").addClass("none");
+		}
+	})
+	
 
 })
