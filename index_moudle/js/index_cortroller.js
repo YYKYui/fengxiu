@@ -103,7 +103,7 @@ $(function() {
 
 	})
 	$(".container_cortroller_jiben_8").click(function() {
-		if(dst_zhenshu == dst_zongzhenshu || dst_zhenshu == 0 || dst_zhenshu==undefined){
+		if(dst_zhenshu == dst_zongzhenshu || dst_zhenshu == 0 || dst_zhenshu==undefined ||imagedata == undefined){
 			loading_dst.removeClass("none");
 			var filenum = window.Android.filenum();
 			filenum = filenum * 0.2;
@@ -156,6 +156,8 @@ $(function() {
 		$("#draw_table").attr("src", "");
 		$(".container_cortroller_message_zhenshu_2").val("9999");
 		$(".container_cortroller_message_zhenshu_math_1").val("0");
+		var backgroundurl = "./image/cro_icon/cor_strat.png";
+		$(".container_cortroller_jiben_1_icon").css("background", "url("+backgroundurl+") no-repeat");
 		
 	})
 	var myCanvas = document.getElementById('wang_ge');
