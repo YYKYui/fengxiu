@@ -32,8 +32,9 @@ $(function() {
 				dst_zhenshu=0;
 			}
 
-			dst_zongzhenshu = window.Android.zhenshu();
+			
 			timerPnghost = setInterval(function() {
+				dst_zongzhenshu = window.Android.zhenshu();
 				if ((dst_zhenshu < dst_zongzhenshu) && (dst_zongzhenshu - dst_zhenshu >8)) {
 					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
 					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
@@ -66,9 +67,10 @@ $(function() {
 			var backgroundurl = "./image/cro_icon/cor_strat.png";
 			$(".container_cortroller_jiben_1_icon").css("background", "url("+backgroundurl+") no-repeat");
 			dst_zhenshu = dst_zhenshu;
-			dst_zongzhenshu = window.Android.zhenshu();
+			
 
 			timerPnghost = setInterval(function() {
+				dst_zongzhenshu = window.Android.zhenshu();
 				if ((dst_zhenshu < dst_zongzhenshu) && (dst_zongzhenshu - dst_zhenshu >8)) {
 					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
 					$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
@@ -120,8 +122,8 @@ $(function() {
 			huoqutimeer=setInterval(function(){
 				clearInterval(timerPnghost)
 				var dst_zongzhenshu = window.Android.zhenshu();
-				$(".container_cortroller_message_zhenshu_2").val("0");
-				$(".container_cortroller_message_zhenshu_math_1").val(dst_zhenshu);
+				$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
+				$(".container_cortroller_message_zhenshu_math_1").val("0");
 				window.Android.Imagepng(0); //0 为整图 数值为针数
 				imagedata = window.Android.Imagepng(0);
 				if (imagedata == undefined) {
@@ -211,13 +213,14 @@ $(function() {
 	
 	$(".is_inputmath_yes").click(function(){
 		var input_zhenshu_num = $(".input_zhenshu_num").val().trim();
-		console.log(dst_zongzhenshu)
-		if(input_zhenshu_num>dst_zongzhenshu){
-			errormessage_text("针数不能超过"+dst_zongzhenshu+"针");
+		var zongshu = $(".container_cortroller_message_zhenshu_2").val().trim();
+		if(input_zhenshu_num>zongshu){
+			errormessage_text("针数不能超过"+zongshu+"针");
 		}else if(input_zhenshu_num == ""){
 			errormessage_text("输入值不能为空");
 		}else{
 			dst_zhenshu=input_zhenshu_num;
+			console.log(dst_zhenshu)
 			$(".input_motai").addClass("none");
 		}
 	})
