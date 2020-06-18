@@ -8,16 +8,15 @@ $(function() {
 	var dst_zongzhenshu;
 	var iswork = false;
 	$(".container_cortroller_jiben_1").click(function() {
+		var background_url = "./image/cro_icon/cor_jixu.png";
+		$(".container_cortroller_jiben_1_icon").css("background", "url("+ background_url +") no-repeat");
 		clearInterval(huoqutimeer);
 		clearInterval(timerPnghost);
 		if(iswork == false){
 			if($(".container_cortroller_message_zhenshu_math_1").val()==0){
 				dst_zhenshu=0;
 			}
-			var background_url = "./image/cro_icon/cor_jixu.png";
-			$(".container_cortroller_jiben_1_icon").css("background", "url("+ background_url +") no-repeat");
 			dst_zongzhenshu = window.Android.zhenshu();
-			console.log(dst_zongzhenshu)
 			timerPnghost = setInterval(function() {
 				if ((dst_zhenshu < dst_zongzhenshu) && (dst_zongzhenshu - dst_zhenshu >8)) {
 					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
@@ -48,10 +47,11 @@ $(function() {
 			}, 200);
 			iswork = true;
 		}else{
+			var backgroundurl = "./image/cro_icon/cor_strat.png";
+			$(".container_cortroller_jiben_1_icon").css("background", "url("+backgroundurl+") no-repeat");
 			dst_zhenshu = dst_zhenshu;
 			dst_zongzhenshu = window.Android.zhenshu();
-			var backgroundurl = "./image/cro_icon/cor_start.png";
-			$(".container_cortroller_jiben_1_icon").css("background", "url("+backgroundurl+") no-repeat");
+
 			timerPnghost = setInterval(function() {
 				if ((dst_zhenshu < dst_zongzhenshu) && (dst_zongzhenshu - dst_zhenshu >8)) {
 					$(".container_cortroller_message_zhenshu_2").val(dst_zongzhenshu);
