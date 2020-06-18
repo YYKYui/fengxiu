@@ -1,6 +1,8 @@
 $(function() {
 	// upload docunment
 	
+	
+	
 	var loading_dst = $(".loading_dst");
 	var timerPnghost;
 	var huoqutimeer;
@@ -8,15 +10,19 @@ $(function() {
 	var dst_zongzhenshu;
 	var iswork = false;
 	var imagedata;
+	
+	function errormessage_text(message){
+		$(".error_message").removeClass("none");
+		$(".error_message").text(message)
+		var qingchu = window.setTimeout(function(){
+			$(".error_message").addClass("none");
+		},2000)	
+	}
 	$(".container_cortroller_jiben_1").click(function() {
 		clearInterval(huoqutimeer);
 		clearInterval(timerPnghost);
 		if(imagedata == undefined){
-			$(".error_message").removeClass("none");
-			$(".error_message").text("请先上传文件，再进行刺绣操作")
-			var qingchu = window.setTimeout(function(){
-				$(".error_message").addClass("none");
-			},2000)
+			errormessage_text("请先上传花样，在进行缝绣操作")
 			return false
 		}
 		var background_url = "./image/cro_icon/cor_jixu.png";
@@ -122,20 +128,36 @@ $(function() {
 					$(".dst_zhanshi").text("传输失败请重新上传图片")
 				} else {
 					var draw_table = document.getElementById("draw_table");
-					$("#draw_table").attr("src", "data:image/png;base64," + imagedata)
+					$("#draw_table").attr("src", "data:image/png;base64," + imagedata);
 				}
 			},1111)
-		}else{
-			$(".error_message").removeClass("none");
-			$(".error_message").text("工作中无法上传文件")
-			var qingchu = window.setTimeout(function(){
-				$(".error_message").addClass("none");
-			},2000)
+		}else{			
+			errormessage_text("工作中无法上传文件");
 		}
 	
 	})
-
-
+	
+	$(".container_cortroller_jiben_2").click(function(){
+		if(imagedata==undefined){
+			errormessage_text("当前无文件");
+			return false;
+		}else{
+			$(".motai_fixed").removeClass("none");
+		}
+	})
+	$(".click_no").click(function(){
+		$(".motai_fixed").addClass("none");
+	});
+	$(".click_yes").click(function(){
+		$(".motai_fixed").addClass("none");
+		clearInterval(huoqutimeer);
+		clearInterval(timerPnghost);
+		imagedata = undefined;
+		$("#draw_table").attr("src", "");
+		$(".container_cortroller_message_zhenshu_2").val("9999");
+		$(".container_cortroller_message_zhenshu_math_1").val("0");
+		
+	})
 	var myCanvas = document.getElementById('wang_ge');
 	var ctx = myCanvas.getContext('2d');
 	var gridSize = 10;
