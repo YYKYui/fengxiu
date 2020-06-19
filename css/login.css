@@ -17,7 +17,8 @@ span.change_touxiang_icon {
 }
 span.change_touxiang_more{
 	display: block;
-	background: red;
+	background: url(../img/my_info/get_more.png) no-repeat;
+	background-size: 10px 20px;
 	width: 10px;
 	height: 20px;
 	position: absolute;
@@ -46,7 +47,8 @@ span.change_name_text{
 }
 span.change_name_more{
 	display: block;
-	background: red;
+	background: url(../img/my_info/get_more.png) no-repeat;
+	background-size: 10px 20px;
 	width: 10px;
 	height: 20px;
 	position: absolute;
@@ -64,7 +66,8 @@ a.change_password{
 }
 span.change_password_more{
 	display: block;
-	background: red;
+	background: url(../img/my_info/get_more.png) no-repeat;
+	background-size: 10px 20px;
 	width: 10px;
 	height: 20px;
 	position: absolute;
