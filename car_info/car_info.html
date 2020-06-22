@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../templates/css/footer.css" />
+		<link rel="stylesheet" href="../templates/css/header.css" />
+		<link rel="stylesheet" href="../css/public_base.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css/sweetalert.css"/>
+		<link rel="stylesheet" href="./css/carinfo.css">
+		<title>商品详情</title>
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="content">
+			<div class="image_car_info">
+				<img src="../index_moudle/image/buyiClass/biyiclass_titleicon.jpg" alt="" class="image_car_info_img">
+			</div>
+			<section class="dividezone">
+				<div class="row clearfix">
+					<div class="col-9">
+						<p><span class="prices">￥200</span>生产周期20天</p>
+						<h2>超级无敌刺激大作</h2>
+					</div>
+					<div class="col-3 pull-right">
+						<a class="thumbnail thumbnailhome" href="shop.html"><span class="icon-home"></span>商家</a>
+					</div>
+				</div>
+				<div class="shelvestip" data-type="popbox" data-href="servicedetail">
+					<span><span class="icon-chengnuo"></span>七天无忧退换</span>
+					<span><span class="icon-chengnuo"></span>先行赔付</span>
+					<span><span class="icon-chengnuo"></span>超时赔偿</span>
+					<span class="arrowicon"></span>
+				</div>
+			</section>
+			<section class="standard-list">
+				<div class="shelvestip">
+					<a class="arrowicon standardtext checked_shop" data-type="popbox" data-href="category">已选择："XL","蓝色"</a>
+				</div>
+				<div class="shelvestip">
+					<a class="arrowicon click_pingjia">商品评价（3）</a>
+				</div>
+			</section>
+			<section class="describe">
+				<div class="thumbnail">
+				</div>
+			</section>
+			<a class="backToTop icon-gotop" title="返回顶部"></a>
+
+			<!--商品评价-->
+			<div class="fixedpage evaluationpage">
+				<div class="headerbar">
+					<h1>评价</h1>
+					<a class="navbar-toggle back_carinfo">
+						<span class="icon-m_goback"></span>
+					</a>
+				</div>
+				<div class="lists">
+					<div class="evalute">
+						<div class="tags">
+							<span class="tagsheadimg"><span><img src="" width="40"></span><i>133****38</i>评价</span>
+							<span class="time">2014-09-12</span>
+							<div class="rates">
+								<div class="star-score" data-value="4">
+									<i class="rated"></i><i class="rated"></i><i class="rated"></i><i class="rated"></i><i></i>
+								</div>
+							</div>
+						</div>
+						<p>颜色很正，评价内容，网购有风险，花钱要谨慎！</p>
+					</div>
+					<div class="evalute">
+						<div class="tags">
+							<span class="tagsheadimg"><span><img src="img/headimg.png" width="40"></span><i>133****38</i>评价</span>
+							<span class="time">2014-09-12</span>
+							<div class="rates">
+								<div class="star-score" data-value="3">
+									<i class="rated"></i><i class="rated"></i><i class="rated"></i><i></i><i></i>
+								</div>
+							</div>
+						</div>
+						<p>颜色很正，评价内容，网购有风险，花钱要谨慎！</p>
+					</div>
+					<div class="evalute">
+						<div class="tags">
+							<span class="tagsheadimg"><span><img src="img/headimg.png" width="40"></span><i>133****38</i>评价</span>
+							<span class="time">2014-09-12</span>
+							<div class="rates">
+								<div class="star-score" data-value="1">
+									<i class="rated"></i><i></i><i></i><i></i><i></i>
+								</div>
+							</div>
+						</div>
+						<p>颜色很正，评价内容，网购有风险，花钱要谨慎！</p>
+					</div>
+				</div>
+			</div>
+
+
+			<!--购物车弹出框-->
+			<section class="popbox prebuy" id="shoppingcar">
+				<a class="close" data-dismiss="popbox">×</a>
+				<div class="shelves">
+					<div class="media clearfix">
+						<div class="media-left">
+							<img src="http://fakeimg.pl/120x120/eee/fff/?text=LOGO" />
+						</div>
+						<div class="media-body">
+							<h2 class="prices">￥229</h2>
+							<p>生产周期描述</p>
+						</div>
+					</div>
+					<div class="number clearfix">
+						购买数量：
+						<input id="amount" type="text" class="spinners" data-min="1" data-max="24" value="1" maxlength="4">
+					</div>
+					<div class="buttonzone">
+						<button class="btn btn-block button_addshopcar" onClick="addcart()" data-dismiss="popbox">确定</button>
+					</div>
+				</div>
+			</section>
+
+			<!--服务说明弹出框-->
+			<section class="popbox" id="servicedetail">
+				<div class="fx_dl">
+					<div class="fwsm_t">服务说明</div>
+					<ul class="fwsm_d">
+						<li>
+							<div><span class="icon-chengnuo"></span><span class="f_t">7天无忧退换</span></div>
+							<div><span class="f_d">实物破损、不符、质量问题，退换货商家承担往返运费。</span></div>
+						</li>
+						<li>
+							<div><span class="icon-chengnuo"></span><span class="f_t">先行赔付</span></div>
+							<div><span class="f_d">争议可申诉，申诉成功，立即退款。</span></div>
+						</li>
+						<li>
+							<div><span class="icon-chengnuo"></span><span class="f_t">超时赔偿</span></div>
+							<div><span class="f_d">未按承诺时间发货，系统自动赔付（赔款金额为订单商品金额的30%，上限500元）。</span></div>
+						</li>
+						<li>
+							<div><span class="icon-chengnuo"></span><span class="f_t">顺丰包邮</span></div>
+							<div><span class="f_d">运费由商家承担</span></div>
+						</li>
+					</ul>
+					<br />
+					<div class="buttonzone">
+						<button class="btn btn-block" data-dismiss="popbox">关闭</button>
+					</div>
+				</div>
+			</section>
+
+			<!--商品规格选择-->
+			<section class="popbox prebuy" id="category">
+				<a class="close" data-dismiss="popbox">×</a>
+				<div class="shelves">
+					<div class="media clearfix">
+						<div class="media-left">
+							<img src="http://fakeimg.pl/120x120/eee/fff/?text=LOGO" />
+						</div>
+						<div class="media-body">
+							<h2 class="prices">￥229</h2>
+							<p>生产周期描述</p>
+						</div>
+					</div>
+					<div class="standard">
+						<p>分类信息：</p>
+						<div>
+							<input value="XL" type="radio" name="standard" checked />
+							<input value="L" type="radio" name="standard" />
+							<input value="S" type="radio" name="standard" />
+						</div>
+					</div>
+					<div class="standard">
+						<p>其他分类：</p>
+						<div>
+							<input value="蓝色" type="radio" name="standard2" checked />
+							<input value="绿色" type="radio" name="standard2" />
+							<input value="黑色" type="radio" name="standard2" />
+						</div>
+					</div>
+					<div>
+						<br /><br />
+					</div>
+					<div class="buttonzone">
+						<button class="btn btn-block confirm_shangpin" data-dismiss="popbox">确定</button>
+					</div>
+				</div>
+			</section>
+			<!--规格选择结束-->
+
+			<footer>
+				<div class="footheight"></div>
+				<div class="row footbar">
+					<div class="col-12 text-center">
+						<div class="square">
+							<a href="tel:4008000000"><span class="icon-phone"></span>客服</a>
+						</div>
+						<div class="square">
+							<a href="../my_shopcar.html"><span class="icon-cart"></span>购物车<i class="numberpro"></i></a>
+						</div>
+						<div class="btn-group">
+							<a class="btn btn-fade" data-type="popbox" data-href="shoppingcar">加入购物车</a>
+							<a class="btn" href="./submit_dingdan.html">&nbsp;立即购买&nbsp;</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</body>
+	<script src="../js/public/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/npm/eruda"></script>
+	<script type="text/javascript">
+		eruda.init();
+	</script>
+	<script type="text/javascript">
+		$("#header").load("../templates/header.html");
+		$("#footer").load("../templates/footer.html");
+	</script>
+	<script src="./js/base/swipeSlide.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/base/sweetalert.min.js" type="text/javascript"></script>
+	<script src="./js/base/jquery.mmenu.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/base/jquery.touchSwipe.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="./js/car_info_base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/car_info.js" type="text/javascript" charset="utf-8"></script>
+</html>
