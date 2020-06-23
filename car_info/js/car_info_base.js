@@ -36,74 +36,75 @@ function parseURL(url) {
 }
 
 
+// $(function(){
+//   $(document).on('click',".menu>li",function(){
+//     if($(this).find(".mmenu-submenu").is(":visible"))
+//     {
+//       $(this).find(".mmenu-submenu").hide();
+//     }else{
+//       $(this).find(".mmenu-submenu").show();
+//       $(this).siblings("li").find(".mmenu-submenu").hide();
+//     }
+
+//   });
+
+//   $(".content").scroll(function() {
+// 		if($("content").scrollTop()!==0 )
+// 		{
+// 			$(".backToTop").fadeIn(500);
+// 		}
+// 		else{
+// 			$(".backToTop").fadeOut(500);
+// 		}
+// 	});
+//   $(".backToTop").on('click',function(e){
+// 		e.preventDefault();
+// 		$(document.documentElement).animate({
+// 			scrollTop: 0
+// 		},200);
+// 		//鏀寔chrome
+// 		$(document.body).animate({
+// 			scrollTop: 0
+// 		},200);
+// 	});
+
+//   $.fn.scrollTo =function(options){
+//          var defaults = {
+//              toT : 0,    //滚动目标位置
+//              durTime : 500,  //过渡动画时间
+//              delay : 30,     //定时器时间
+//              callback:null   //回调函数
+//          };
+//          var opts = $.extend(defaults,options),
+//              timer = null,
+//              _this = this,
+//              curTop = _this.scrollTop(),//滚动条当前的位置
+//              subTop = opts.toT - curTop,    //滚动条目标位置和当前位置的差值
+//              index = 0,
+//              dur = Math.round(opts.durTime / opts.delay),
+//              smoothScroll = function(t){
+//                  index++;
+//                  var per = Math.round(subTop/dur);
+//                  if(index >= dur){
+//                      _this.scrollTop(t);
+//                      window.clearInterval(timer);
+//                      if(opts.callback && typeof opts.callback == 'function'){
+//                          opts.callback();
+//                      }
+//                      return;
+//                  }else{
+//                      _this.scrollTop(curTop + index*per);
+//                  }
+//              };
+//          timer = window.setInterval(function(){
+//              smoothScroll(opts.toT);
+//          }, opts.delay);
+//          return _this;
+//      };
+// });
+
 $(function(){
-  $(document).on('click',".menu>li",function(){
-    if($(this).find(".mmenu-submenu").is(":visible"))
-    {
-      $(this).find(".mmenu-submenu").hide();
-    }else{
-      $(this).find(".mmenu-submenu").show();
-      $(this).siblings("li").find(".mmenu-submenu").hide();
-    }
-
-  });
-
-  $(document).scroll(function() {
-		if($(document).scrollTop()!==0 )
-		{
-			$(".backToTop").fadeIn(500);
-		}
-		else{
-			$(".backToTop").fadeOut(500);
-		}
-	});
-  $(".backToTop").on('click',function(e){
-		e.preventDefault();
-		$(document.documentElement).animate({
-			scrollTop: 0
-		},200);
-		//鏀寔chrome
-		$(document.body).animate({
-			scrollTop: 0
-		},200);
-	});
-
-  $.fn.scrollTo =function(options){
-         var defaults = {
-             toT : 0,    //滚动目标位置
-             durTime : 500,  //过渡动画时间
-             delay : 30,     //定时器时间
-             callback:null   //回调函数
-         };
-         var opts = $.extend(defaults,options),
-             timer = null,
-             _this = this,
-             curTop = _this.scrollTop(),//滚动条当前的位置
-             subTop = opts.toT - curTop,    //滚动条目标位置和当前位置的差值
-             index = 0,
-             dur = Math.round(opts.durTime / opts.delay),
-             smoothScroll = function(t){
-                 index++;
-                 var per = Math.round(subTop/dur);
-                 if(index >= dur){
-                     _this.scrollTop(t);
-                     window.clearInterval(timer);
-                     if(opts.callback && typeof opts.callback == 'function'){
-                         opts.callback();
-                     }
-                     return;
-                 }else{
-                     _this.scrollTop(curTop + index*per);
-                 }
-             };
-         timer = window.setInterval(function(){
-             smoothScroll(opts.toT);
-         }, opts.delay);
-         return _this;
-     };
-});
-
-$(function(){
+	
       $("select").on('change',function(){
            $(this).css({'color':'#333'});
        });
@@ -199,63 +200,64 @@ $(function(){
       rating($(this));
     });
 
-    $(document).on("click",function(e){
-  		var target  = $(e.target);
-      var bh = $(window).height();
-  		if(target.closest(".dropdown-toggle").length === 0){
-        $(".dropdown").removeClass("open");
-        $(".wrapper form").removeClass("fixedform");
-        $(".dropdown .blackbg").remove();
-        $(".btnfixed").hide();
-        $("body").css({"overflow":"auto","height":"auto","min-height":bh});
-  		}
-  	});
+   //  $(document).on("touchend",function(e){
+  	// 	var target  = $(e.target);
+   //      var bh = $(window).height();
+  	// 	if(target.closest(".dropdown-toggle").length === 0){
+   //      $(".dropdown").removeClass("open");
+   //      $(".wrapper form").removeClass("fixedform");
+   //      $(".dropdown .blackbg").remove();
+   //      $(".btnfixed").hide();
+   //      // $(".content").css({"overflow":"auto","height":"auto","min-height":bh});
+  	// 	}
+  	// });
 
-  $(document).on('click','[data-type=popbox]',function(){
+  $(document).on('touchend','[data-type=popbox]',function(){
     var target = $(this).attr("data-href");
     if($(this).hasClass("empty"))
     {
       return;
     }else{
+		var obj =$(".mengpingbg");
+		obj.removeClass("none")
       $("#" + target).show();
-      var obj =$("<div class='blackbg bgprebuy' style='position:fixed; height:100%; top:0;'></div>");
-      obj.insertAfter("body");
-      obj.on('click',function(){
-        $("#" + target).hide();
-        obj.remove();
-      });
+
+      // obj.on('click',function(){
+      //   $("#" + target).hide();
+      //   obj.addClass("none");
+      // });
       $("[data-dismiss=popbox]").on("click",function(){
         $("#" + target).hide();
-        obj.remove();
+        obj.addClass("none");
       });
     }
   });
 
-  $(".addresslists>div>ul").swipe( {
-        //Single swipe handler for left swipes
-        swipeLeft:function(event, direction, distance, duration, fingerCount) {
-          if(!$(this).parent("div").hasClass("active"))
-          {
-            var height = $(this).parent("div").outerHeight();
-            var move = $(this).next(".hidebtn-group").width();
-            $(this).next(".hidebtn-group").height(height);
-            $(this).parent("div").siblings("div").find("ul").trigger("swipeRight");
-            $(this).css({"transform":"translateX(-"+ move +"px)","-webkit-transform":"translateX(-"+ move +"px)"});
-            $(this).next(".hidebtn-group").css({"transform":"translateX(-"+ move +"px)","-webkit-transform":"translateX(-"+ move +"px)"});
-            $(this).parent("div").addClass("active");
-          }
-        },
-        swipeRight:function(event, direction, distance, duration, fingerCount) {
-          if($(this).parent("div").hasClass("active"))
-          {
-            $(this).css({"transform":"translateX(0)","-webkit-transform":"translateX(0)"});
-            $(this).next(".hidebtn-group").css({"transform":"translateX(0)","-webkit-transform":"translateX(0)"});
-            $(this).parent("div").removeClass("active");
-          }
-        },
-        //Default is 75px, set to 0 for demo so any distance triggers swipe
-        threshold:0
-  });
+  // $(".addresslists>div>ul").swipe( {
+  //       //Single swipe handler for left swipes
+  //       swipeLeft:function(event, direction, distance, duration, fingerCount) {
+  //         if(!$(this).parent("div").hasClass("active"))
+  //         {
+  //           var height = $(this).parent("div").outerHeight();
+  //           var move = $(this).next(".hidebtn-group").width();
+  //           $(this).next(".hidebtn-group").height(height);
+  //           $(this).parent("div").siblings("div").find("ul").trigger("swipeRight");
+  //           $(this).css({"transform":"translateX(-"+ move +"px)","-webkit-transform":"translateX(-"+ move +"px)"});
+  //           $(this).next(".hidebtn-group").css({"transform":"translateX(-"+ move +"px)","-webkit-transform":"translateX(-"+ move +"px)"});
+  //           $(this).parent("div").addClass("active");
+  //         }
+  //       },
+  //       swipeRight:function(event, direction, distance, duration, fingerCount) {
+  //         if($(this).parent("div").hasClass("active"))
+  //         {
+  //           $(this).css({"transform":"translateX(0)","-webkit-transform":"translateX(0)"});
+  //           $(this).next(".hidebtn-group").css({"transform":"translateX(0)","-webkit-transform":"translateX(0)"});
+  //           $(this).parent("div").removeClass("active");
+  //         }
+  //       },
+  //       //Default is 75px, set to 0 for demo so any distance triggers swipe
+  //       threshold:0
+  // });
 
   /*$(".addresslists").on('swipeUp',function(){
 		var dis =$(this).scrollTop();

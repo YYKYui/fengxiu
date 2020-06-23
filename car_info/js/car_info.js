@@ -30,7 +30,6 @@ $(function(){
 				"height":$(window).height()+'px',
 				"top":"0"
 			});
-			$("body").css({"overflow":"hidden","height":$(window).height()+'px'});
 		}
 	})
 	
