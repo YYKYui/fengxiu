@@ -7,7 +7,7 @@ $.fn.cityChoose=function(settings){
   if(this.length<1){return;};
   // 默认值
   settings=$.extend({
-    url:"http://static.tcxy.com.cn/admin/js/city.min.js",//url:省市数据josn文件路径
+    url:"https://static.tcxy.com.cn/admin/js/city.min.js",//url:省市数据josn文件路径
     prov:null,  //prov:默认省份
     city:null,  //city:默认城市
     dist:null,  //dist:默认地区（县
