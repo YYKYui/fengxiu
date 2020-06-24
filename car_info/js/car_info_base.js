@@ -114,21 +114,6 @@ $(function(){
     {
       $(".tabmenu .menu2").navfix(0,99);
     }
-
-    $('.slide').swipeSlide({
-        continuousScroll:true,
-        speed : 3000,
-        transitionType : 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
-        autoSwipe:true,
-        lazyLoad:true,
-        firstCallback : function(i,sum,me){
-            me.find('.dot').children().first().addClass('cur');
-        },
-        callback : function(i,sum,me){
-            me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
-        }
-    });
-
     $(document).on('click','.popslides',function(){
       if($(this).hasClass("active"))
       {
@@ -200,17 +185,17 @@ $(function(){
       rating($(this));
     });
 
-   //  $(document).on("touchend",function(e){
-  	// 	var target  = $(e.target);
-   //      var bh = $(window).height();
-  	// 	if(target.closest(".dropdown-toggle").length === 0){
-   //      $(".dropdown").removeClass("open");
-   //      $(".wrapper form").removeClass("fixedform");
-   //      $(".dropdown .blackbg").remove();
-   //      $(".btnfixed").hide();
-   //      // $(".content").css({"overflow":"auto","height":"auto","min-height":bh});
-  	// 	}
-  	// });
+    $(document).on("touchend",function(e){
+  		var target  = $(e.target);
+        var bh = $(window).height();
+  		if(target.closest(".dropdown-toggle").length === 0){
+        $(".dropdown").removeClass("open");
+        $(".wrapper form").removeClass("fixedform");
+        $(".dropdown .blackbg").remove();
+        $(".btnfixed").hide();
+        // $(".content").css({"overflow":"auto","height":"auto","min-height":bh});
+  		}
+  	});
 
   $(document).on('touchend','[data-type=popbox]',function(){
     var target = $(this).attr("data-href");
@@ -232,44 +217,6 @@ $(function(){
       });
     }
   });
-
-  // $(".addresslists>div>ul").swipe( {
-  //       //Single swipe handler for left swipes
-  //       swipeLeft:function(event, direction, distance, duration, fingerCount) {
-  //         if(!$(this).parent("div").hasClass("active"))
-  //         {
-  //           var height = $(this).parent("div").outerHeight();
-  //           var move = $(this).next(".hidebtn-group").width();
-  //           $(this).next(".hidebtn-group").height(height);
-  //           $(this).parent("div").siblings("div").find("ul").trigger("swipeRight");
-  //           $(this).css({"transform":"translateX(-"+ move +"px)","-webkit-transform":"translateX(-"+ move +"px)"});
-  //           $(this).next(".hidebtn-group").css({"transform":"translateX(-"+ move +"px)","-webkit-transform":"translateX(-"+ move +"px)"});
-  //           $(this).parent("div").addClass("active");
-  //         }
-  //       },
-  //       swipeRight:function(event, direction, distance, duration, fingerCount) {
-  //         if($(this).parent("div").hasClass("active"))
-  //         {
-  //           $(this).css({"transform":"translateX(0)","-webkit-transform":"translateX(0)"});
-  //           $(this).next(".hidebtn-group").css({"transform":"translateX(0)","-webkit-transform":"translateX(0)"});
-  //           $(this).parent("div").removeClass("active");
-  //         }
-  //       },
-  //       //Default is 75px, set to 0 for demo so any distance triggers swipe
-  //       threshold:0
-  // });
-
-  /*$(".addresslists").on('swipeUp',function(){
-		var dis =$(this).scrollTop();
-		$(this).scrollTo({toT:dis+100});
-	});
-	$(".addresslists").on('swipeDown',function(){
-		var dis =$(this).scrollTop();
-		$(this).scrollTo({toT:dis-+100});
-	});*/
-  //document.addEventListener('touchmove', function (event) {
-    //event.preventDefault();
-  //}, false);
 
 });
 
