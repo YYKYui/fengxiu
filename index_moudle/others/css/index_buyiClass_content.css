@@ -1,0 +1,307 @@
+.buyi_ClassContent_img {
+	border-bottom: 1px solid #eee;
+	/* padding-bottom: 10px; */
+}
+
+p.buyi_ClassContent_title {
+	background: #fff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 36px;
+	font-weight: 600;
+	padding-top: 18px;
+}
+
+p.buyi_ClassContent_jianjie {
+	padding: 0 10px;
+	padding-bottom: 10px;
+	background: #fff;
+	text-align: justify;
+	overflow: hidden;
+	line-height: 24px;
+	font-size: 16px;
+	color: #757575;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.buyi_Class_writer {
+	background: #fff;
+	padding: 10px;
+}
+
+.buyi_Class_writer_info {
+	left: 10px;
+	height: 50px;
+}
+
+.buyi_Class_writer_icon {
+	float: left;
+	width: 34px;
+	height: 34px;
+	border-radius: 34px;
+	background: url(../../../car_info/img/headimg.png) no-repeat;
+	background-size: 34px 34px;
+}
+
+.buyi_Class_writer_user {
+	float: left;
+	margin-left: 5px;
+	line-height: 20px;
+	color: #757575;
+}
+
+.buyi_Class_writer_user_name {
+	display: block;
+	color: black;
+	font-weight: 600;
+}
+
+.buyi_Class_writer_jianjie {
+	line-height: 20px;
+	font-size: 14px;
+	color: #757575;
+}
+
+p.buyi_Class_writer_jianjie_title {
+	font-size: 16px;
+	color: black;
+	padding: 8px 0;
+}
+
+p.buyi_Class_writer_jianjie_content {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	margin-bottom: 10px;
+}
+
+.buyi_class_content_video_title {
+	text-align: center;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+.buyi_class_content_video_content {
+	line-height: 29px;
+	font-size: 16px;
+	color: #757575;
+	text-align: justify;
+}
+
+.playvideo {
+	margin-bottom: 10px;
+}
+
+.buyi_footer {
+	width: 100%;
+	height: 50px;
+	border-top: 1px solid #eee;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	z-index: 4;
+}
+
+a.buyi_footerdianzhan {
+	width: 50%;
+	float: left;
+	border-right: 1px solid #eee;
+	height: 100%;
+	text-align: center;
+	line-height: 50px;
+	position: relative;
+}
+
+.dianzan {
+	position: absolute;
+	height: 20px;
+	width: 70px;
+	top: 50%;
+	margin-top: -10px;
+	left: 50%;
+	margin-left: -35px;
+}
+
+span.buyi_footerdianzhan_icon {
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	background: url(../../../img/index_img/fire_dianzan.png) no-repeat;
+	background-size: 20px 20px;
+}
+
+span.buyi_footerdianzhan_math {
+	display: block;
+	float: left;
+	height: 20px;
+	width: 40px;
+	line-height: 20px;
+}
+
+a.buyi_footerfenxiang {
+	width: 49.5%;
+	float: left;
+	height: 50px;
+	position: relative;
+}
+
+span.buyi_footerfenxiang_icon {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(../../../car_info/img/edit.png) no-repeat;
+	background-size: 20px 20px;
+	top: 50%;
+	margin-top: -10px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.zixun_content_liuyan {
+	margin-top: 4px;
+	background-color: #FFFFFF;
+}
+
+.zixun_content_liuyan_title {
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.zixun_content_liuyan_document {
+	min-height: 150px;
+	padding: 0 10px;
+}
+
+.zixun_content_liuyan_document_load {
+	width: 220px;
+	height: 50px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	color: #999;
+	line-height: 50px;
+	text-align: center;
+}
+
+.zixun_content_liuyan_document_none {
+	width: 220px;
+	height: 50px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+	color: #999;
+	line-height: 50px;
+	text-align: center;
+}
+
+.liuyan_button {
+	display: block;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	/* border: 0; */
+	bottom: 0;
+	text-align: center;
+	line-height: 50px;
+	background: #fff;
+	border-top: 1px solid red;
+}
+
+.zixun_content_liuyan_img {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.zixun_content_liuyan_name_text {
+	overflow: hidden;
+	margin: 0 auto;
+	height: 44px;
+	line-height: 44px;
+	font-size: 16px;
+	color: #333333;
+	float: left;
+	margin-left: 10px;
+}
+
+.zixun_content_liuyan_datatime {
+	overflow: hidden;
+	margin: 0.5rem auto;
+	width: 100%;
+}
+
+.zixun_content_liuyan_datatime p {
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #cccccc;
+}
+
+.zixun_content_liuyan_datatime p span {
+	overflow: hidden;
+	margin: 0 auto;
+	margin-right: 10px;
+}
+
+.zixun_content_liuyan_context_txt {
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.zixun_content_liuyan_context_txt p {
+	overflow: hidden;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #333333;
+}
+
+.zixun_content_liuyan_have {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.zixun_content_liuyan_others {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	background: #fff;
+}
+
+.zixun_content_liuyan_name {
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.icon_border {
+	overflow: hidden;
+	margin: 0 auto;
+	display: block;
+	float: left;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+}
+
+.buyi_pinglun{
+	margin-top: 4px;
+	background-color: #FFFFFF;
+}
